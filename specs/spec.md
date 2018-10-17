@@ -7,12 +7,6 @@ the `WeakCell` type, the `WeakRef` type, the `WeakFactory` type, some
 abstract functions, and some characteristics of the runtime garbage 
 collector.
 
-## WeakFactory Objects
-
-A `WeakFactory` is an object that creates `WeakCells` and `WeakRefs`  for a
-related group of target objects, and implements and manages the cleanup after
-each of those targets have been reclaimed.
-
 ### The WeakFactory Constructor
 
 The Ream constructor is the %WeakFactory% intrinsic object and the initial value of the *WeakFactory* property of the global object. When called as a constructor it creates and initializes a new WeakFactory object. WeakFactory is not intended to be called as a function and will throw an exception when called in that manner.
